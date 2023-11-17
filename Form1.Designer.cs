@@ -56,7 +56,7 @@
             this.MainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainText.Location = new System.Drawing.Point(12, 47);
             this.MainText.Name = "MainText";
-            this.MainText.Size = new System.Drawing.Size(474, 106);
+            this.MainText.Size = new System.Drawing.Size(652, 106);
             this.MainText.TabIndex = 1;
             this.MainText.Text = "";
             this.MainText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainText_KeyPress);
@@ -66,7 +66,7 @@
             this.encriptedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.encriptedText.Location = new System.Drawing.Point(12, 269);
             this.encriptedText.Name = "encriptedText";
-            this.encriptedText.Size = new System.Drawing.Size(474, 106);
+            this.encriptedText.Size = new System.Drawing.Size(652, 106);
             this.encriptedText.TabIndex = 1;
             this.encriptedText.Text = "";
             this.encriptedText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.encriptedText_KeyPress);
@@ -77,13 +77,13 @@
             this.encriptType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.encriptType.FormattingEnabled = true;
             this.encriptType.Items.AddRange(new object[] {
-            "Подстановкой",
-            "Перестановокой",
-            "Подменой",
-            "Гаммированием"});
+            "Подстановкой (WORD)",
+            "Перестановкой (Скитал)",
+            "Подменой (Атбаш)",
+            "Гаммированием (XOR)"});
             this.encriptType.Location = new System.Drawing.Point(312, 162);
             this.encriptType.Name = "encriptType";
-            this.encriptType.Size = new System.Drawing.Size(183, 32);
+            this.encriptType.Size = new System.Drawing.Size(352, 32);
             this.encriptType.TabIndex = 2;
             this.encriptType.SelectedIndexChanged += new System.EventHandler(this.encriptType_SelectedIndexChanged);
             // 
@@ -135,7 +135,7 @@
             this.codeWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codeWord.Location = new System.Drawing.Point(315, 225);
             this.codeWord.Name = "codeWord";
-            this.codeWord.Size = new System.Drawing.Size(161, 26);
+            this.codeWord.Size = new System.Drawing.Size(349, 26);
             this.codeWord.TabIndex = 5;
             this.codeWord.Visible = false;
             this.codeWord.TextChanged += new System.EventHandler(this.codeWord_TextChanged);
@@ -145,15 +145,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(308, 12);
+            this.label4.Location = new System.Drawing.Point(436, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.Size = new System.Drawing.Size(147, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Лангугаге";
+            this.label4.Text = "Кодируемый Язык";
             // 
             // cLang
             // 
-            this.cLang.Location = new System.Drawing.Point(401, 12);
+            this.cLang.Location = new System.Drawing.Point(589, 12);
             this.cLang.Name = "cLang";
             this.cLang.Size = new System.Drawing.Size(75, 23);
             this.cLang.TabIndex = 7;
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 387);
+            this.ClientSize = new System.Drawing.Size(676, 387);
             this.Controls.Add(this.cLang);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.codeWord);
